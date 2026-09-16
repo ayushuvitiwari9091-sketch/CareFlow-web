@@ -22,8 +22,17 @@ import Doctor6 from '../images/doctor-6.jpg'
 import Doctor7 from '../images/doctor-7.jpg'
 import Doctor8 from '../images/doctor-8.jpg'
 import tecimg from '../images/technology.jpg'
-
+import updateimg from '../images/updateimg.png'
+import maxupdate1 from '../images/max-update-1.png'
+import maxupdate2 from '../images/max-update-2.png'
+import ElectrolyteCard from '../Components/ElectrolyteCard';
+import Footer from '../Components/Footer.jsx'
+import Electroimg1 from '../images/Ele1.jpg'
+import Electroimg2 from '../images/ele2.jpg'
+import Electroimg3 from '../images/ele3.jpeg'
+import Whatsapp  from '../images/whatsaap.png';
 const Home = () => {
+
   const DoctorData = [
     {
       name: "Dr. Mazhar Husain",
@@ -67,10 +76,34 @@ const Home = () => {
     }
   ];
 
+  const ElectroData = [
+    {
+      heading: "Vaginal Itching Explained: Causes, Home Remedies & When to See a Doctor",
+      image: Electroimg1,
+      Text: "When we think about Alzheimer’s disease, we often focus on ",
+    },
+    {
+      heading: "Understanding Electrolyte Imbalance: Types, Symptoms, Causes, and Treatment Pathways",
+      image: Electroimg2,
+      Text: " Electrolytes are essential minerals that keep the body function",
+    },
+    {
+      heading: "Blood Pressure and Cholesterol: Impact on Alzheimer’s Risk",
+      image: Electroimg3,
+      Text: "When we think about Alzheimer’s disease, we often focus on ",
+    },
+  ];
+
   const specialities = ["GI Sciences", "Renal Sciences", "Neuroscience", "Orthopaedics and Joint Replacement", "Cardiac Sciences", "Liver Transplant and Biliary Sciences", "Cancer Care / Oncology", "Obstetrics and Gynaecology", "Internal Medicine",];
   return (
     <>
       <Header />
+
+      <a href="https://wa.me/9304485279?text=Hello%20sir,%20I%20am%20intersted%20in%20your%20service" target="_blank">
+        <div class="floating-btn">
+          <span>WHATSAAP</span>
+        </div>
+      </a>
 
       <div className="home-img-main">
         <img src={Homeimg} alt="img" />
@@ -179,13 +212,12 @@ const Home = () => {
         </div>
         <div className="doctores-img-div">
           {
-            DoctorData.map((item)=>(
-              <DoctorCard image={item.image} name={item.name} branch={item.branch}/>
+            DoctorData.map((item) => (
+              <DoctorCard image={item.image} name={item.name} branch={item.branch} />
             ))
           }
         </div>
       </section>
-
 
       <section className='technological-advancements'>
         <h1>Our Technological Advancements</h1>
@@ -194,11 +226,127 @@ const Home = () => {
           <img src={tecimg} alt="" />
 
           <div className="mri-div">
-            
+            <h2>MRI</h2>
+
+            <p>This hefty machine is well known for utilizing shorter scan times and maximizing patiend comfort without compromising on quality. The superb reliability of high-field MRI</p>
+
+            <div className="mri-div-button">
+              <button>Learn More</button>
+              <div><MdOutlineKeyboardArrowRight /></div>
+            </div>
+
+          </div>
+          <div className="mri-div">
+            <h2>CT SCAN</h2>
+
+            <p>LG Lightspeed 128-slice CT-Scanner xtream FX suite workflow management full Dicom connectvity Auto-sugmentation 70cm gantry opening 65cm variable field of view heigh 2D and 3D resolution</p>
+
+            <div className="mri-div-button">
+              <button>Learn More</button>
+              <div><MdOutlineKeyboardArrowRight /></div>
+            </div>
+
           </div>
         </div>
 
       </section>
+
+
+      {/* Max update */}
+
+
+      <section className='medical-experts-outer'>
+
+        <div className="medical-corner-div">
+          <div className="medical-corner-top-div">
+            <div className="medical-corner-top-left">
+              <h2>CareFlow Updates</h2>
+              <p>Stay updated with the latest initiatives and healthcare updates from across CareFlow Healthcare.</p>
+
+              <div className="doctor-button">
+                <span>View All</span>
+                <div><MdOutlineKeyboardArrowRight /></div>
+              </div>
+
+            </div>
+
+            <div className="medical-corner-top-right">
+
+            </div>
+          </div>
+
+
+          <div className="medical-corner-bottom-div">
+            <div className="medical-corner-bottom-left update-img">
+              <img src={updateimg} alt="" />
+            </div>
+
+            <div className="medical-corner-bottom-right"></div>
+          </div>
+
+        </div>
+        <div className="doctores-img-div">
+          <div className="health-cards">
+
+            {/* Card 1 */}
+            <div className="health-card">
+              <div className="health-card-image">
+                <img
+                  src={maxupdate1}
+                  alt="Men's Health Clinic"
+                />
+              </div>
+
+              <div className="health-card-content">
+                <h3>
+                  Introducing the Men’s Health Clinic at CareFlow Super Speciality
+                  Hospital, Lucknow
+                </h3>
+
+                <p>
+                  CareFlow Super Speciality Hospital, Lucknow, proudly launches its
+                  dedicated Men’s Health Clinic
+                </p>
+              </div>
+            </div>
+
+
+            {/* Card 2 */}
+            <div className="health-card">
+              <div className="health-card-image">
+                <img
+                  src={maxupdate2}
+                  alt="Men's Health Clinic"
+                />
+              </div>
+
+              <div className="health-card-content">
+                <h3>
+                  Introducing the Men’s Health Clinic at CareFlow Super Speciality
+                  Hospital, Lucknow
+                </h3>
+
+                <p>
+                  CareFlow Super Speciality Hospital, Lucknow, proudly launches its
+                  dedicated Men’s Health Clinic
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className='electro-div'>
+        {
+          ElectroData.map((item) => (
+            <ElectrolyteCard image={item.image} Text={item.Text} Heading={item.heading} />
+          ))
+        }
+      </section>
+
+      <Footer />
+
     </>
   )
 }

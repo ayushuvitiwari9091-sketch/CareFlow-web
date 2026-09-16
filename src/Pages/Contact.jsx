@@ -5,6 +5,8 @@ import { MdLocationPin } from "react-icons/md";
 import { MdAddCall } from "react-icons/md";
 import { MdMessage } from "react-icons/md";
 import { MdWatchLater } from "react-icons/md";
+import Footer from '../Components/Footer.jsx'
+
 
 
 const Contact = () => {
@@ -149,6 +151,7 @@ const Contact = () => {
       </section>
 
     </div>
+    <Footer/>
     </>
   )
 }

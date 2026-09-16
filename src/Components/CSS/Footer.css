@@ -1,0 +1,324 @@
+.footer {
+  background: #003d73;
+  color: white;
+  margin-top: 40px;
+}
+
+
+/* Top Wave */
+
+.footer-wave {
+  height: 25px;
+  background: #35b6b4;
+  border-radius: 0 0 50% 50%;
+}
+
+
+/* Main Footer */
+
+.footer-container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 35px 20px 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.35fr
+    1fr
+    1.25fr
+    1.15fr
+    1.35fr;
+
+  gap: 22px;
+
+  align-items: stretch;
+}
+
+
+/* Common Box */
+
+.footer-box {
+  color: white;
+}
+
+
+/* CareFlow Brand */
+
+.brand h2 {
+  font-size: 30px;
+  margin: 0 0 5px;
+}
+
+.brand h2 span {
+  color: #35b6b4;
+}
+
+.brand h4 {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.brand p {
+  max-width: 260px;
+
+  color: #d5e3ee;
+
+  font-size: 12px;
+  line-height: 1.6;
+
+  margin: 0;
+}
+
+
+/* Social Icons */
+
+.social {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.social a {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: white;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.social a:hover {
+  background: #35b6b4;
+}
+
+
+/* Headings */
+
+.footer-box h3 {
+  font-size: 17px;
+  margin: 0 0 18px;
+}
+
+.footer-box h3::after {
+  content: "";
+
+  display: block;
+
+  width: 38px;
+  height: 3px;
+
+  background: #35b6b4;
+
+  margin-top: 7px;
+
+  border-radius: 5px;
+}
+
+
+/* Links */
+
+.footer-box > a {
+  display: block;
+
+  color: #e1edf5;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  margin: 11px 0;
+}
+
+.footer-box > a:hover {
+  color: #35b6b4;
+}
+
+
+/* Contact Us */
+
+.contact {
+  background: transparent !important;
+  padding: 0;
+}
+
+.contact p {
+  margin: 11px 0;
+
+  color: #e1edf5;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+.contact small {
+  display: block;
+
+  color: #a9c0d1;
+
+  font-size: 10px;
+
+  margin-top: -7px;
+  margin-bottom: 10px;
+}
+
+
+/* Map */
+
+.footer-map {
+  width: 100%;
+
+  height: 215px;
+
+  margin: 0;
+
+  border-radius: 13px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  align-self: start;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+
+  display: block;
+}
+
+
+/* Bottom Footer */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  padding: 13px 4%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #d5e3ee;
+
+  font-size: 11px;
+}
+
+
+/* Privacy & Terms */
+
+.bottom-links {
+  display: flex;
+
+  align-items: center;
+}
+
+.bottom-links a {
+  color: #d5e3ee;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  margin: 0 8px;
+}
+
+.bottom-links a:hover {
+  color: #35b6b4;
+}
+
+.bottom-links span {
+  color: #66859c;
+}
+
+
+/* Scroll Top Button */
+
+.footer-bottom button {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #35b6b4;
+
+  color: white;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.footer-bottom button:hover {
+  background: #28a5a3;
+}
+
+.con-footer{
+  margin-top: 5px !important;
+}
+
+.con-footer h3{
+  color: white;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-map {
+    height: 180px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    padding: 30px 25px;
+  }
+
+  .footer-map {
+    height: 200px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    gap: 12px;
+
+    text-align: center;
+  }
+}

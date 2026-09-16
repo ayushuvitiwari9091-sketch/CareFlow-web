@@ -2,6 +2,9 @@ import React from 'react'
 import './CSS/Services.css'
 import Header from '../Components/Header'
 import heroimage from '../images/services1.jpeg'
+import Footer from '../Components/Footer.jsx'
+
+
 
 const Services = () => {
   return (
@@ -297,6 +300,7 @@ const Services = () => {
       </section>
 
     </div>
+    <Footer/>
     </>
   )
 }

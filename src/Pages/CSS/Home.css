@@ -1,106 +1,119 @@
+.floating-btn{
+  position: fixed;
+  bottom: 236px;
+  right: 0;
+  z-index: 999;
+  background-color: green;
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 5px;
+  padding: 68px 4px;
+  font-weight: 600;
+}
 .home-img-main {
-    height: 500px;
-    width: 100%;
-    margin-top: 125px;
+  height: 500px;
+  width: 100%;
+  margin-top: 125px;
 }
 
 .home-img-main img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 
 .home-img-2 {
-    height: auto;
-    width: 90%;
-    margin: 0 auto;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .home-img-2 img {
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .home-about-outer {
-    height: auto;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 10px;
-    border-radius: 15px;
-    border: 1px solid rgb(224, 222, 222);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 15px rgba(114, 113, 113, 0.2);
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 1px solid rgb(224, 222, 222);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(114, 113, 113, 0.2);
 }
 
 
 .home-about-left {
-    height: 100%;
-    width: 65%;
-    padding: 50px 22px;
-    line-height: 1.5;
-    color: rgb(104, 103, 103);
-    font-size: 17px;
+  height: 100%;
+  width: 65%;
+  padding: 50px 22px;
+  line-height: 1.5;
+  color: rgb(104, 103, 103);
+  font-size: 17px;
 }
 
 .home-about-left button {
-    border: none;
-    background: transparent;
-    text-decoration: underline;
-    color: rgb(8, 8, 104);
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  color: rgb(8, 8, 104);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-about-left button>svg {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .home-about-left button:hover {
-    color: #35B6B4;
+  color: #35B6B4;
 }
 
 .home-about-right {
-    height: 100%;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 20px;
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
 }
 
 .home-about-right-img {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .home-about-right-img img {
-    height: 60px;
-    margin-top: 15px;
+  height: 60px;
+  margin-top: 15px;
 }
 
 .home-about-main {
-    display: flex;
+  display: flex;
 }
 
 .home-about-bottom {
-    border-top: 1px solid rgb(187, 183, 183);
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-    padding-bottom: 10px;
+  border-top: 1px solid rgb(187, 183, 183);
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  padding-bottom: 10px;
 
 }
 
 .home-about-bottom img {
-    height: 110px;
+  height: 110px;
 }
 
 .specialities-section {
@@ -123,6 +136,7 @@
   display: inline-block;
   padding-bottom: 5px;
 }
+
 .specialities-tab {
   width: fit-content;
   color: #299b9b;
@@ -178,10 +192,10 @@
   min-height: 400px;
 }
 
-.image-placeholder img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.image-placeholder img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -213,43 +227,43 @@
 
 
 /* doctors */
-.medical-experts-outer{
+.medical-experts-outer {
   height: auto;
   width: 100%;
 }
 
-.medical-corner-div{
+.medical-corner-div {
   height: 750px;
   width: 45%;
   margin-left: 30px;
   border-radius: 15px;
 }
 
-.medical-corner-top-div{
+.medical-corner-top-div {
   height: 50%;
   width: 100%;
-  background-color: #164c78;
+  background-color: #003A70;
   border-radius: 15px;
   display: flex;
 }
 
-.medical-corner-top-left{
+.medical-corner-top-left {
   height: 100%;
   width: 50%;
   color: white;
   padding: 20px 20px;
 }
 
-.medical-corner-top-left p{
+.medical-corner-top-left p {
   margin-top: 15px;
 }
 
-.medical-corner-top-left p{
+.medical-corner-top-left p {
   font-size: 20px;
   line-height: 1.4;
 }
 
-.doctor-button{
+.doctor-button {
   height: 60px;
   width: 250px;
   background-color: #0082A8;
@@ -263,7 +277,7 @@
   border-radius: 8px;
 }
 
-.doctor-button span{
+.doctor-button span {
   height: 100%;
   width: 200px;
   display: flex;
@@ -271,7 +285,7 @@
   justify-content: center;
 }
 
-.doctor-button div{
+.doctor-button div {
   height: 100%;
   width: 50px;
   display: flex;
@@ -279,28 +293,28 @@
   align-items: center;
   justify-content: center;
   background-color: #00A5BE;
-   border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
-.medical-corner-bottom-left{
+.medical-corner-bottom-left {
   height: 100%;
   width: 53%;
   padding: 10px 10px;
 }
 
-.medical-corner-bottom-left img{
+.medical-corner-bottom-left img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.medical-corner-top-div{
+.medical-corner-top-div {
   position: relative;
 }
 
-.doctores-img-div{
-  height: 780px;
+.doctores-img-div {
+  height: auto;
   width: 1120px;
   position: absolute;
   top: 0;
@@ -309,43 +323,189 @@
   border: 1px solid rgb(223, 223, 223);
   border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 15px;
   margin-top: 20px;
 }
 
-.medical-corner-div{
+.medical-corner-div {
   height: 100%;
   width: 50%;
 }
 
-.medical-experts-outer{
+.medical-experts-outer {
   position: relative;
   height: auto;
   width: 100%;
+  margin-top: 30px;
 }
 
-.technological-advancements{
-  height: 500px;
+.technological-advancements {
+  padding-bottom: 30px;
   width: 100%;
-  background-color: #123e63;
+  background-color: #003A70;
   margin-top: 100px;
   padding-top: 20px;
 }
 
-.technological-advancements h1{
+.technological-advancements h1 {
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.technological-advancements-main{
+.technological-advancements-main {
   margin-left: 30px;
+  display: flex;
+  gap: 20px;
 }
 
-.technological-advancements-main img{
+.technological-advancements-main img {
   height: 330px;
   margin-top: 10px;
 }
 
+.mri-div {
+  height: 340px;
+  width: 450px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 30px;
+  margin-left: 20px;
+}
+
+.mri-div h2 {
+  color: rgb(123, 122, 122);
+}
+
+.mri-div p {
+  color: rgb(104, 103, 103);
+  margin-top: 20px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.mri-div-button {
+  display: flex;
+  margin-top: 50px;
+  height: 50px;
+  width: 180px;
+  background-color: #0082A8;
+  color: white;
+  border-radius: 6px;
+}
+
+.mri-div-button button {
+  background-color: transparent;
+  border: none;
+  width: 78%;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mri-div-button div {
+  width: 22%;
+  height: 100%;
+  background-color: #00A5BE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.health-cards {
+  width: 1100px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* Card */
+
+.health-card {
+  width: 50%;
+
+  background-color: white;
+
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+
+  overflow: hidden;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+
+.health-card-image {
+  width: 100%;
+  height: 280px;
+
+  overflow: hidden;
+}
+
+.health-card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+/* Content */
+
+.health-card-content {
+  padding: 18px 20px 25px;
+}
+
+.health-card-content h3 {
+  margin: 0 0 25px;
+
+  color: #06447c;
+
+  font-size: 19px;
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+.health-card-content p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .health-cards {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .health-card {
+    width: 100%;
+  }
+
+}
+
+.electro-div{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.update-img img{
+  height: 280px;
+}
