@@ -1,0 +1,351 @@
+.home-img-main {
+    height: 500px;
+    width: 100%;
+    margin-top: 125px;
+}
+
+.home-img-main img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.home-img-2 {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.home-img-2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.home-about-outer {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 222, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(114, 113, 113, 0.2);
+}
+
+
+.home-about-left {
+    height: 100%;
+    width: 65%;
+    padding: 50px 22px;
+    line-height: 1.5;
+    color: rgb(104, 103, 103);
+    font-size: 17px;
+}
+
+.home-about-left button {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    color: rgb(8, 8, 104);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-about-left button>svg {
+    font-size: 25px;
+}
+
+.home-about-left button:hover {
+    color: #35B6B4;
+}
+
+.home-about-right {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.home-about-right-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-about-right-img img {
+    height: 60px;
+    margin-top: 15px;
+}
+
+.home-about-main {
+    display: flex;
+}
+
+.home-about-bottom {
+    border-top: 1px solid rgb(187, 183, 183);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 10px;
+
+}
+
+.home-about-bottom img {
+    height: 110px;
+}
+
+.specialities-section {
+  width: 86%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.specialities-left {
+  width: 55%;
+}
+
+.specialities-left h2 {
+  font-size: 24px;
+  color: #123e63;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #123e63;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.specialities-tab {
+  width: fit-content;
+  color: #299b9b;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 25px;
+  border-bottom: 2px solid #299b9b;
+  margin-bottom: 25px;
+}
+
+.specialities-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 45px;
+  row-gap: 25px;
+}
+
+.speciality-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #163f63;
+}
+
+.speciality-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #164c78;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.speciality-item p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.specialities-right {
+  width: 45%;
+  min-height: 430px;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.image-placeholder img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+  .specialities-section {
+    width: 90%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .specialities-left {
+    width: 100%;
+  }
+
+  .specialities-right {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .specialities-list {
+    grid-template-columns: 1fr;
+  }
+
+  .specialities-left h2 {
+    font-size: 21px;
+  }
+
+}
+
+
+/* doctors */
+.medical-experts-outer{
+  height: auto;
+  width: 100%;
+}
+
+.medical-corner-div{
+  height: 750px;
+  width: 45%;
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+.medical-corner-top-div{
+  height: 50%;
+  width: 100%;
+  background-color: #164c78;
+  border-radius: 15px;
+  display: flex;
+}
+
+.medical-corner-top-left{
+  height: 100%;
+  width: 50%;
+  color: white;
+  padding: 20px 20px;
+}
+
+.medical-corner-top-left p{
+  margin-top: 15px;
+}
+
+.medical-corner-top-left p{
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.doctor-button{
+  height: 60px;
+  width: 250px;
+  background-color: #0082A8;
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.doctor-button span{
+  height: 100%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-button div{
+  height: 100%;
+  width: 50px;
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #00A5BE;
+   border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.medical-corner-bottom-left{
+  height: 100%;
+  width: 53%;
+  padding: 10px 10px;
+}
+
+.medical-corner-bottom-left img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.medical-corner-top-div{
+  position: relative;
+}
+
+.doctores-img-div{
+  height: 780px;
+  width: 1120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.medical-corner-div{
+  height: 100%;
+  width: 50%;
+}
+
+.medical-experts-outer{
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.technological-advancements{
+  height: 500px;
+  width: 100%;
+  background-color: #123e63;
+  margin-top: 100px;
+  padding-top: 20px;
+}
+
+.technological-advancements h1{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.technological-advancements-main{
+  margin-left: 30px;
+}
+
+.technological-advancements-main img{
+  height: 330px;
+  margin-top: 10px;
+}
+

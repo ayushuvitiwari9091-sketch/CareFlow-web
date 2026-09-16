@@ -1,0 +1,31 @@
+.doctor-card-outer{
+    height: 360px;
+    width: 250px;
+    border:  2px sold rgb(156, 154, 154);
+    box-shadow: 0 0 15px rgb(238, 235, 235);
+    border-radius: 10px;
+    color: #616161;
+    background-color: #FFFFFF;
+}
+
+.doctor-card-outer:hover{
+    background-color: #f9f5f5;
+}
+
+.doctor-card-outer img{
+    height: 75%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.doctor-card-outer h3{
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.doctor-card-outer p{
+    margin-top: 15px;
+    margin-left: 12px;
+}
+
