@@ -62,7 +62,7 @@ const Footer = () => {
         <div className="footer-box contact con-footer">
           <h3>Contact Us</h3>
 
-          <p>📍 Rajgarh, Mirzapur</p>
+          <p>📍 JankiPuram, Lucknow</p>
           <small>Uttar Pradesh, India</small>
 
           <p>📞 +91 98765 43210</p>

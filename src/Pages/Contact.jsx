@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="contact-info">
 
           <h2>Get In Touch</h2>
-          <p className="info-text">
+          <p className="info-text" id='info-text'>
             Feel free to contact us for any information about our
             hospital, doctors, treatments or appointments.
           </p>

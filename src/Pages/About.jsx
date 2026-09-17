@@ -90,7 +90,6 @@ const About = () => {
 
       </section>
 
-
       {/* Mission */}
       <section className="mission-section">
 
@@ -104,7 +103,6 @@ const About = () => {
         </p>
 
         <div className="mission-boxes">
-
           <div>
             <span>◷</span>
             <h3>Reduce Waiting Time</h3>
@@ -126,7 +124,6 @@ const About = () => {
         </div>
 
       </section>
-
 
       {/* What We Offer */}
       <section className="offer-section">
@@ -204,7 +201,6 @@ const About = () => {
 
       </section>
 
-
       {/* How CareFlow Works */}
       <section className="work-section">
 
@@ -212,7 +208,6 @@ const About = () => {
           <p className="small-title">HOW CAREFLOW WORKS</p>
           <h2>A Simple Process for Better Experience</h2>
         </div>
-
         <div className="steps">
 
           <div className="step">

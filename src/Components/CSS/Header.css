@@ -63,19 +63,13 @@
     height: 100%;
     width: auto;
 }
-
-.navbar-menu {
-    /* height: 100%; */
-    /* width: 500px; */
-}
-
 .navbar-menu ul {
     display: flex;
     list-style: none;
     color: #235584;
     text-decoration: none;
     height: 100%;
-    width: 600px;
+    width: 520px;
     display: flex;
     align-items: center;
     justify-content: space-around;
