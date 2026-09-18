@@ -8,7 +8,6 @@ import About from './Pages/About'
 import Tokens from './Pages/AppointmentTokens'
 import Login from './Components/Login'
 
-
 const App = () => {
   return (
     <>

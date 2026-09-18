@@ -1,84 +1,108 @@
-import React from 'react'
-import './CSS/Treatment.css'
-import Header from '../Components/Header'
-import Footer from '../Components/Footer.jsx'
+import React from "react";
+import "./CSS/Treatment.css";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer.jsx";
+import { FaPlus } from "react-icons/fa6";
+import { IoMdTime } from "react-icons/io";
+import { FaHeartbeat } from "react-icons/fa";
+import Trc1 from '../images/TrCard1.jpeg'
+import Trc2 from '../images/Tr2.jpeg'
+import Trc3 from '../images/Tr3.jpeg'
+import Trc4 from '../images/Tr4.jpeg'
+import Trc5 from '../images/Tr5.jpeg'
+import Trc6 from '../images/tr6.jpeg'
+
+
 
 const Treatment = () => {
 
   const treatments = [
     {
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=85",
+      image: Trc1,
       title: "Cardiac Care",
       text: "Complete care and treatment for heart-related healthcare needs.",
       tag: "HEART CARE"
     },
     {
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=85",
+      image: Trc4,
       title: "Neurology",
       text: "Specialized healthcare and treatment for brain and nervous system.",
       tag: "NEURO CARE"
     },
     {
-      image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=900&q=85",
+      image: Trc3,
       title: "Orthopedic Care",
       text: "Professional care for bones, joints and movement-related problems.",
       tag: "BONE & JOINT"
     },
     {
-      image: "https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=900&q=85",
+      image: Trc2,
       title: "Eye Care",
       text: "Complete eye care and treatment for better vision and eye health.",
       tag: "EYE CARE"
     },
     {
-      image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=85",
+      image: Trc6,
       title: "Dental Care",
       text: "Dental consultation and treatment for healthy teeth and gums.",
       tag: "DENTAL CARE"
     },
     {
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85",
+      image: Trc5,
       title: "General Care",
       text: "General consultation and healthcare for common health concerns.",
       tag: "GENERAL CARE"
     }
-  ]
+  ];
 
   return (
     <>
       <Header />
+
       <div className="treatment-page">
+
+        {/* Heading */}
+
         <section className="treatment-heading">
+
           <div className="heading-badge">
             CAREFLOW HEALTHCARE
           </div>
+
           <h1>
             Healthcare Designed
             <br />
             <span>Around You.</span>
           </h1>
+
           <p>
             From routine consultation to specialized treatment,
             CareFlow helps you find the right care with less waiting
             and more convenience.
           </p>
+
           <div className="heading-buttons">
             <button className="primary-btn">
               Book Appointment →
             </button>
+
             <button className="outline-btn">
               Explore Treatments
             </button>
           </div>
+
         </section>
 
 
-        {/* ================= QUICK INFO ================= */}
+        {/* Quick Info */}
 
         <section className="quick-info">
 
           <div className="info-box">
-            <div className="info-icon">✚</div>
+            <div className="info-icon">
+              <FaPlus />
+            </div>
+
             <div>
               <strong>Expert Doctors</strong>
               <span>Experienced healthcare professionals</span>
@@ -86,7 +110,10 @@ const Treatment = () => {
           </div>
 
           <div className="info-box">
-            <div className="info-icon">◷</div>
+            <div className="info-icon">
+              <IoMdTime />
+            </div>
+
             <div>
               <strong>Easy Booking</strong>
               <span>Appointments & digital tokens</span>
@@ -94,7 +121,10 @@ const Treatment = () => {
           </div>
 
           <div className="info-box">
-            <div className="info-icon">♡</div>
+            <div className="info-icon">
+              <FaHeartbeat />
+            </div>
+
             <div>
               <strong>Patient First</strong>
               <span>Care focused on your comfort</span>
@@ -103,8 +133,7 @@ const Treatment = () => {
 
         </section>
 
-
-        {/* ================= CATEGORIES ================= */}
+        {/* Categories */}
 
         <section className="categories">
 
@@ -127,7 +156,6 @@ const Treatment = () => {
             </p>
 
           </div>
-
 
           <div className="category-container">
 
@@ -152,6 +180,7 @@ const Treatment = () => {
 
                 </div>
 
+
                 <div className="card-content">
 
                   <h3>{item.title}</h3>
@@ -174,7 +203,7 @@ const Treatment = () => {
         </section>
 
 
-        {/* ================= FEATURED ================= */}
+        {/* Featured Treatment */}
 
         <section className="featured">
 
@@ -183,7 +212,7 @@ const Treatment = () => {
             <div className="featured-image">
 
               <img
-                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85"
+                src="/images/featured-care.jpg"
                 alt="Healthcare"
               />
 
@@ -213,6 +242,7 @@ const Treatment = () => {
                 in one simple system.
               </p>
 
+
               <div className="featured-points">
 
                 <div>
@@ -232,6 +262,7 @@ const Treatment = () => {
 
               </div>
 
+
               <button className="primary-btn">
                 Book Appointment →
               </button>
@@ -243,7 +274,7 @@ const Treatment = () => {
         </section>
 
 
-        {/* ================= PROCESS ================= */}
+        {/* Process */}
 
         <section className="process">
 
@@ -340,7 +371,7 @@ const Treatment = () => {
         </section>
 
 
-        {/* ================= WHY CAREFLOW ================= */}
+        {/* Why CareFlow */}
 
         <section className="why-careflow">
 
@@ -370,35 +401,58 @@ const Treatment = () => {
           <div className="why-list">
 
             <div className="why-item">
+
               <span>01</span>
+
               <div>
                 <h3>Experienced Doctors</h3>
-                <p>Connect with qualified healthcare professionals.</p>
+                <p>
+                  Connect with qualified healthcare professionals.
+                </p>
               </div>
+
             </div>
 
+
             <div className="why-item">
+
               <span>02</span>
+
               <div>
                 <h3>Easy Appointment</h3>
-                <p>Book appointments without unnecessary waiting.</p>
+                <p>
+                  Book appointments without unnecessary waiting.
+                </p>
               </div>
+
             </div>
 
+
             <div className="why-item">
+
               <span>03</span>
+
               <div>
                 <h3>Digital Token System</h3>
-                <p>Track your queue and token status easily.</p>
+                <p>
+                  Track your queue and token status easily.
+                </p>
               </div>
+
             </div>
 
+
             <div className="why-item">
+
               <span>04</span>
+
               <div>
                 <h3>Better Hospital Visits</h3>
-                <p>Save time with organized hospital services.</p>
+                <p>
+                  Save time with organized hospital services.
+                </p>
               </div>
+
             </div>
 
           </div>
@@ -406,7 +460,7 @@ const Treatment = () => {
         </section>
 
 
-        {/* ================= CTA ================= */}
+        {/* CTA */}
 
         <section className="treatment-cta">
 
@@ -437,7 +491,7 @@ const Treatment = () => {
 
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Treatment
+export default Treatment;

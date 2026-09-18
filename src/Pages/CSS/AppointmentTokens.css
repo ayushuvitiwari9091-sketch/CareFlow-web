@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.none{
+  display: none;
+}
+
 .token-page {
   background: #f5f9fc;
   min-height: 100vh;
@@ -137,7 +141,7 @@
 .generated-section {
   width: 90%;
   max-width: 900px;
-  margin: 0 auto 90px;
+  margin: 40px auto 90px;
 }
 
 .generated-card {
