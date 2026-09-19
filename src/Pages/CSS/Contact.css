@@ -212,6 +212,7 @@
   padding: 12px 22px;
   border-radius: 6px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {

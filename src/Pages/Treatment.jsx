@@ -11,10 +11,13 @@ import Trc3 from '../images/Tr3.jpeg'
 import Trc4 from '../images/Tr4.jpeg'
 import Trc5 from '../images/Tr5.jpeg'
 import Trc6 from '../images/tr6.jpeg'
+import { useNavigate } from "react-router-dom";
+import Treatmentp from '../images/treatment.jpeg'
 
 
 
 const Treatment = () => {
+  const navigate = useNavigate();
 
   const treatments = [
     {
@@ -82,7 +85,7 @@ const Treatment = () => {
           </p>
 
           <div className="heading-buttons">
-            <button className="primary-btn">
+            <button className="primary-btn" onClick={()=> navigate('/tokens')}>
               Book Appointment →
             </button>
 
@@ -212,7 +215,7 @@ const Treatment = () => {
             <div className="featured-image">
 
               <img
-                src="/images/featured-care.jpg"
+                src={Treatmentp}
                 alt="Healthcare"
               />
 
@@ -263,7 +266,7 @@ const Treatment = () => {
               </div>
 
 
-              <button className="primary-btn">
+              <button className="primary-btn" onClick={()=> navigate('/tokens')}>
                 Book Appointment →
               </button>
 
@@ -481,7 +484,7 @@ const Treatment = () => {
 
           </div>
 
-          <button>
+          <button onClick={()=> navigate('/tokens')}>
             Book Appointment →
           </button>
 

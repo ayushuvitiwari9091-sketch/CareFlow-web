@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./CSS/AppointmentTokens.css";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer.jsx";
+import html2canvas from "html2canvas";
 
 const AppointmentTokens = () => {
   const [ganrated, setganrated] = useState(false)
 
-  const handlegenratetocken = () => {
-    setganrated(true)
-  }
+  const tockenRef = useRef();
+  const downloadTocken = async () => {
+    const canvas = await html2canvas(tockenRef.current);
+
+    const link = document.createElement('a');
+    link.download = "Careflow-Token.png";
+    link.href = canvas.toDataURL('image/png');
+
+    link.click();
+  };
 
   const [formData, setformData] = useState({
     name: "",
@@ -23,20 +31,25 @@ const AppointmentTokens = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(formData);
+    console.log("Form Data:", formData);
 
-    const response = await fetch("http://localhost:5000/callback", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData)
-    });
+    try {
+      const response = await fetch("http://localhost:5000/callback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    console.log(data);
-  }
+      console.log("Backend Response:", data);
+
+    } catch (error) {
+      console.log("Fetch Error:", error);
+    }
+  };
   return (
     <>
       <Header />
@@ -126,7 +139,7 @@ const AppointmentTokens = () => {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="generate-btn" onClick={handlegenratetocken}>
+                <button type="submit" className="generate-btn" >
                   Generate Token →
                 </button>
 
@@ -142,7 +155,7 @@ const AppointmentTokens = () => {
         {ganrated && (
 
           <section className="generated-section">
-            <div className="generated-card">
+            <div className="generated-card" ref={tockenRef}>
 
               <div className="success-icon">✓</div>
 
@@ -196,8 +209,8 @@ const AppointmentTokens = () => {
 
               </div>
 
-              <button className="queue-btn">
-                Download Tocken →
+              <button className="queue-btn" onClick={downloadTocken}>
+                Download Tocken
               </button>
 
             </div>

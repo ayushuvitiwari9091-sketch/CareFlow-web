@@ -3,6 +3,8 @@ import './CSS/Login.css'
 import loginImg from'../images/login.png'
 import { RxCross2 } from "react-icons/rx";
 import { useNavigate } from 'react-router-dom';
+import Header from './Header'
+import Footer from './Footer'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -12,6 +14,7 @@ const Login = () => {
   }
   return (
     <>
+    <Header/>
      <div className="login-page">
       <div className="login-box">
 
@@ -41,10 +44,7 @@ const Login = () => {
               placeholder="Enter your email or phone"
             />
             <label>Password</label>
-            <input
-              type="password"
-              placeholder="Enter your password"
-            />
+            <input type="password" placeholder="Enter your password"/>
             <div className="login-options">
               <label className="remember">
                 <input type="checkbox" />
@@ -63,6 +63,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   )
 }

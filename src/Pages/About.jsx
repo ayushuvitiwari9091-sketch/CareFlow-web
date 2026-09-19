@@ -6,9 +6,11 @@ import about2 from '../images/about1.jpeg'
 import doctor3 from '../images/about2.jpeg'
 import about3 from '../images/about3.jpeg'
 import Footer from '../Components/Footer.jsx'
+import { useNavigate } from 'react-router-dom'
 
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <>
     <Header/>
@@ -368,7 +370,7 @@ const About = () => {
           </span>
         </div>
 
-        <button>Book Appointment →</button>
+        <button onClick={()=> navigate('/tokens')}>Book Appointment →</button>
 
       </section>
 

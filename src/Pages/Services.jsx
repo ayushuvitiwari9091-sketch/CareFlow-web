@@ -3,10 +3,12 @@ import './CSS/Services.css'
 import Header from '../Components/Header'
 import heroimage from '../images/services1.jpeg'
 import Footer from '../Components/Footer.jsx'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const Services = () => {
+  const navigate = useNavigate();
   return (
     <>
     <Header/>
@@ -52,21 +54,6 @@ const Services = () => {
             <p>Get medicines and pharmacy services at one place.</p>
             <button>Explore →</button>
           </div>
-
-          <div className="service-box">
-            <div className="icon">👨‍⚕️</div>
-            <h3>Specialist Doctors</h3>
-            <p>Find doctors from different medical departments.</p>
-            <button>Find Doctor →</button>
-          </div>
-
-          <div className="service-box">
-            <div className="icon">📋</div>
-            <h3>Treatment Follow-up</h3>
-            <p>Manage your follow-up appointments easily.</p>
-            <button>Know More →</button>
-          </div>
-
         </div>
       </section>
 
@@ -93,7 +80,7 @@ const Services = () => {
             <p>✓ Turn Notification</p>
           </div>
 
-          <button className="main-btn">Get Token →</button>
+          <button className="main-btn" onClick={()=>navigate("/tokens")} >Get Token →</button>
         </div>
 
 
@@ -295,7 +282,7 @@ const Services = () => {
           <p>Book an appointment or get your digital token today.</p>
         </div>
 
-        <button>Book Appointment →</button>
+        <button onClick={()=>navigate('/tokens')}>Book Appointment →</button>
 
       </section>
 

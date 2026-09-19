@@ -1,4 +1,4 @@
-.floating-btn{
+.floating-btn {
   position: fixed;
   bottom: 236px;
   right: 0;
@@ -11,6 +11,7 @@
   padding: 68px 4px;
   font-weight: 600;
 }
+
 .home-img-main {
   height: 500px;
   width: 100%;
@@ -150,7 +151,7 @@
 .specialities-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 45px;
+  column-gap: 10px;
   row-gap: 25px;
 }
 
@@ -325,6 +326,8 @@
   grid-template-columns: repeat(4, 1fr);
   padding: 15px;
   margin-top: 20px;
+  column-gap: 18px;
+  row-gap: 25px;
 }
 
 .medical-corner-div {
@@ -497,7 +500,7 @@
 
 }
 
-.electro-div{
+.electro-div {
   height: auto;
   width: 100%;
   display: flex;
@@ -505,6 +508,538 @@
   justify-content: space-between;
 }
 
-.update-img img{
+.update-img img {
   height: 280px;
+}
+
+@media (max-width: 1000px) {
+
+  .home-img-main {
+    height: 420px;
+    margin-top: 125px;
+  }
+
+  .home-img-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .home-img-main {
+    height: 300px;
+    margin-top: 130px;
+  }
+
+  .home-img-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .home-img-main {
+    height: 220px;
+    margin-top: 120px;
+  }
+
+  .home-img-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+
+  .floating-btn {
+    bottom: 150px;
+    right: 0;
+
+    padding: 45px 3px;
+
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .floating-btn {
+    bottom: 120px;
+
+    padding: 35px 3px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 768px) {
+
+  .home-img-2 {
+    width: 90%;
+  }
+
+  .home-img-2 img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+/* =========================================
+   HOME ABOUT SECTION
+========================================= */
+
+@media (max-width: 900px) {
+
+  .home-about-outer {
+    width: 90%;
+  }
+
+  .home-about-main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home-about-left {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 25px;
+  }
+
+  .home-about-right {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+
+  .home-about-bottom {
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .home-about-outer {
+    width: 92%;
+  }
+
+  .home-about-left {
+    padding: 25px 20px;
+    font-size: 15px;
+  }
+
+  .home-about-left button {
+    font-size: 16px;
+  }
+
+  .home-about-left button>svg {
+    font-size: 21px;
+  }
+
+  .home-about-right {
+    padding: 20px;
+  }
+
+  .home-about-right-img {
+    gap: 8px;
+  }
+
+  .home-about-right-img img {
+    height: 50px;
+  }
+
+  .home-about-bottom {
+    width: 90%;
+    padding-top: 15px;
+  }
+
+  .home-about-bottom img {
+    height: 75px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .specialities-section {
+    width: 90%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .specialities-left {
+    width: 100%;
+  }
+
+  .specialities-right {
+    width: 100%;
+    min-height: 280px;
+  }
+
+  .image-placeholder {
+    min-height: 280px;
+    height: 280px;
+  }
+
+  .image-placeholder img {
+    object-fit: cover;
+  }
+
+  .specialities-list {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .specialities-left h2 {
+    font-size: 21px;
+  }
+
+  .specialities-tab {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .specialities-section {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .speciality-item {
+    gap: 10px;
+  }
+
+  .speciality-icon {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    font-size: 20px;
+  }
+
+  .speciality-item p {
+    font-size: 14px;
+  }
+
+  .image-placeholder {
+    height: 230px;
+    min-height: 230px;
+  }
+}
+@media (max-width: 1200px) {
+
+  .medical-corner-div {
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .doctores-img-div {
+    width: 65%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .medical-experts-outer {
+    margin-top: 30px;
+  }
+
+  .medical-corner-div {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .medical-corner-top-div {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .doctores-img-div {
+    position: relative;
+
+    width: 90%;
+
+    top: auto;
+    right: auto;
+
+    margin: 30px auto;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .medical-corner-div {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .medical-corner-top-div {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .medical-corner-top-left {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 20px;
+  }
+
+  .medical-corner-top-left p {
+    font-size: 16px;
+  }
+
+  .doctor-button {
+    width: 90%;
+    margin-left: 0;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .doctor-button span {
+    width: 80%;
+  }
+
+  .doctor-button div {
+    width: 20%;
+    font-size: 28px;
+  }
+
+  .medical-corner-bottom-left {
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    padding: 10px;
+  }
+
+  .medical-corner-bottom-left img {
+    object-fit: cover;
+  }
+
+  .doctores-img-div {
+    width: 92%;
+
+    grid-template-columns: 1fr;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1100px) {
+
+  .technological-advancements-main {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .technological-advancements-main img {
+    max-width: 100%;
+    height: auto;
+    max-height: 330px;
+    object-fit: contain;
+  }
+
+  .mri-div {
+    width: 450px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  .health-cards {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .technological-advancements {
+    margin-top: 60px;
+    padding: 20px 0 30px;
+  }
+
+  .technological-advancements h1 {
+    font-size: 25px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .technological-advancements-main {
+    margin: 0 auto;
+
+    width: 90%;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .technological-advancements-main img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .mri-div {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+
+    margin: 0;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+  }
+
+  .mri-div h2 {
+    font-size: 22px;
+  }
+
+  .mri-div p {
+    font-size: 15px;
+  }
+
+  .mri-div-button {
+    margin-top: 30px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .technological-advancements h1 {
+    font-size: 21px;
+  }
+
+  .technological-advancements-main {
+    width: 90%;
+  }
+
+  .mri-div {
+    padding: 20px;
+  }
+
+  .mri-div h2 {
+    font-size: 20px;
+  }
+
+  .mri-div p {
+    font-size: 14px;
+  }
+
+  .mri-div-button {
+    width: 160px;
+    height: 45px;
+  }
+
+  .mri-div-button button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .health-cards {
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .health-card {
+    width: 100%;
+  }
+
+  .health-card-image {
+    height: 220px;
+  }
+
+  .health-card-content {
+    padding: 15px;
+  }
+
+  .health-card-content h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .health-card-content p {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .health-card-image {
+    height: 190px;
+  }
+
+  .health-card-content h3 {
+    font-size: 16px;
+  }
+
+  .health-card-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .electro-div {
+    flex-direction: column;
+
+    width: 90%;
+    margin: 0 auto;
+
+    gap: 20px;
+  }
+
+  .update-img {
+    width: 100%;
+  }
+
+  .update-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .medical-experts-outer,
+  .technological-advancements,
+  .home-about-outer,
+  .specialities-section,
+  .electro-div {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
